@@ -8,8 +8,28 @@
 <div id="map" style="height: 600px"></div>
 <script>
    var map = L.map('map').setView([13.7563, 100.5018], 10);
-   var greenIcon = L.icon({iconUrl: "pic/p_peam.png",
-	iconSize:     [90, 95], 
+   var pic1 = L.icon({iconUrl: 'p_1.png',
+	iconSize:     [50, 45], 
+	iconAnchor:   [45, 45], 
+	popupAnchor:  [0, -39] 		
+});
+   var pic2 = L.icon({iconUrl: 'p_2.jpg',
+	iconSize:     [50, 45], 
+	iconAnchor:   [45, 45], 
+	popupAnchor:  [0, -39] 		
+});
+   var pic3 = L.icon({iconUrl: 'p_3.jpg',
+	iconSize:     [50, 45], 
+	iconAnchor:   [45, 45], 
+	popupAnchor:  [0, -39] 		
+});
+   var pic4 = L.icon({iconUrl: 'p_4.jpg',
+	iconSize:     [50, 45], 
+	iconAnchor:   [45, 45], 
+	popupAnchor:  [0, -39] 		
+});
+   var pic5 = L.icon({iconUrl: 'p_5.jpg',
+	iconSize:     [50, 45], 
 	iconAnchor:   [45, 45], 
 	popupAnchor:  [0, -39] 		
 });
@@ -18,19 +38,19 @@
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-var marker1 = L.marker([13.750784, 100.545706],{icon: greenIcon}).addTo(map);
+var marker1 = L.marker([13.746680100147206, 100.49277840424793],{icon: pic1}).addTo(map);
 marker1.bindPopup("<b>Marker 1</b><br>Lat: 13.7467, Lng: 100.5351").openPopup();
 
-var marker2 = L.marker([13.715034, 100.532862],{icon: greenIcon}).addTo(map);
+var marker2 = L.marker([13.78125562955268, 100.50254777291589],{icon: pic2}).addTo(map);
 marker2.bindPopup("<b>Marker 2</b><br>Lat: 13.7338, Lng: 100.5586").openPopup();
 
-var marker3 = L.marker([13.764503, 100.566691],{icon: greenIcon}).addTo(map);
+var marker3 = L.marker([13.813150587686234, 100.55455025241322],{icon: pic3}).addTo(map);
 marker3.bindPopup("<b>Marker 3</b><br>Lat: 13.7238, Lng: 100.4762").openPopup();
 
-var marker4 = L.marker([13.725504, 100.539105],{icon: greenIcon}).addTo(map);
+var marker4 = L.marker([13.74314388529911, 100.50923427939851],{icon: pic4}).addTo(map);
 marker4.bindPopup("<b>Marker 4</b><br>Lat: 13.7296, Lng: 100.5712").openPopup();
 
-var marker5 = L.marker([13.755242, 100.533237],{icon: greenIcon}).addTo(map);
+var marker5 = L.marker([13.77649400220266, 100.56180683876251],{icon: pic5}).addTo(map);
 marker5.bindPopup("<b>Marker 5</b><br>Lat: 13.7205, Lng: 100.5322").openPopup();
 </script>
 </body>
